@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>/* <![CDATA[ */ ringDataLayer = { "context": { "variant": { "accelerator": "ZG93bmxvYWQucG9jenRhLm9uZXQucGw6OnByb2Rfd2l0aF91c2VyX2RhdGFfZG93bmxvYWRlcl9pbl9hd3M=" } } }; /* ]]> */</script>
+    <script>/* <![CDATA[ */ accConf = { "events": { "endpointPaths": ["/a8f4d8cd95e164917035b64b867a45dd"] } }; /* ]]> */</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="./dist/script.bundle.js"></script>
+    <script>var exports = {};</script>
+    <style>
+        * {
+            overflow: hidden;
+        }
+
+        .enemy {
+            width: 44px;
+            height: 27px;
+            position: absolute;
+        }
+
+        #ship {
+            width: 42px;
+            height: 32px;
+            position: absolute;
+        }
+
+        .bullet {
+            width: 5px;
+            height: 10px;
+            position: absolute;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        #hud {
+            width: 100%;
+            left: 0%;
+            bottom: 0%;
+            /* background-color: white; */
+            position: absolute;
+            z-index: 99;
+        }
+
+        #lifeContainer {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            margin-left: 10px;
+        }
+
+        #levelContainer {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            margin-right: 10px;
+        }
+
+        .life {
+            width: 42px;
+            height: 32px;
+            margin: 5px;
+        }
+
+        .level {
+            width: 22px;
+            height: 32px;
+            margin: 5px;
+        }
+
+        @font-face {
+            font-family: 'Kaz2';
+            src: url('Kaz2.ttf') format('truetype');
+        }
+
+        #score {
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            color: gray;
+            font-family: 'Kaz2';
+            font-size: 30px;
+        }
+
+        #start {
+            height: 100%;
+            width: 100%;
+        }
+
+        #takeoff {
+            position: absolute;
+            left: "-9999px";
+        }
+    </style>
+</head>
+
+<!-- <body style="background-image: url('layout.png');"> -->
+
+<body style="background-color: black; text-align: center;">
+    <audio id="takeoff">
+        <source src="audio/takeoff.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
